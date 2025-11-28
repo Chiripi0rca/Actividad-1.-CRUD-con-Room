@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="add_task">add task</string>
+    <string name="task_title">Task title</string>
+    <string name="task_description">Task description</string>
+    <string name="mark_completed">Mark completed</string>
+    <string name="save">Save</string>
+    <string name="save_task">se ha creado correctamente tu tarea</string>
+    <string name="error_save_task">no se ha creado correctamente tu tarea</string>
+    <string name="update_task">se ha actualizado correctamente tu tarea</string>
+    <string name="error_update_task">no se ha actualizado tu tarea</string>
+    <string name="tareas">Tareas</string>
+    <string name="new_task_title">New Task title</string>
+    <string name="new_task_description">New task description</string>
+</resources>
