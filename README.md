@@ -15,11 +15,11 @@ Esta aplicación implementa una agenda de tareas usando Android, Java y Room com
 1. Clonar o descargar este repositorio.
 2. Abrir la carpeta del proyecto en Android Studio.
 3. Esperar a que Gradle sincronice automáticamente.
-4. Ejecutar la app con el botón Run seleccionando un emulador o dispositivo físico.
+4. Ejecutar la app con el botón *Run* seleccionando un emulador o dispositivo físico.
 
 ## Estructura de la base de datos
 
-El proyecto utiliza Rooom, La tabla principal es `Task`.
+El proyecto utiliza **Rooom**, La tabla principal es `Task`.
 
 ### Entidad `Task`
 Ubicación: `java/com/fic/task/model/Task.java`
