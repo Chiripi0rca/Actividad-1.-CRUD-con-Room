@@ -167,13 +167,21 @@ project/
     │   └── themes.xml
     │
     └── mipmap/                         # Íconos
+```
 
 ---
+
 <a id="capturas"></a>
 ## 📷 Capturas
-![1000000221](https://github.com/user-attachments/assets/2740d8a2-c4be-4f07-b632-f5db549255f5)
-![1000000222](https://github.com/user-attachments/assets/ccdaf3aa-d434-478c-809b-ebf7b5d56bce)
-![1000000227](https://github.com/user-attachments/assets/9008f303-e6a0-4286-8bc4-92dafc7fe4f3)
-![1000000225](https://github.com/user-attachments/assets/c9a0075a-460b-4187-8ff8-30be0a7b0442)
-![1000000224](https://github.com/user-attachments/assets/13d76eaa-3bab-4860-9f0e-3fcd69b6f7b6)
-![1000000226](https://github.com/user-attachments/assets/fe25f707-2c93-45c0-b1ff-7fd933929426)
+
+![Captura 1](https://github.com/user-attachments/assets/2740d8a2-c4be-4f07-b632-f5db549255f5)
+
+![Captura 2](https://github.com/user-attachments/assets/ccdaf3aa-d434-478c-809b-ebf7b5d56bce)
+
+![Captura 3](https://github.com/user-attachments/assets/9008f303-e6a0-4286-8bc4-92dafc7fe4f3)
+
+![Captura 4](https://github.com/user-attachments/assets/c9a0075a-460b-4187-8ff8-30be0a7b0442)
+
+![Captura 5](https://github.com/user-attachments/assets/13d76eaa-3bab-4860-9f0e-3fcd69b6f7b6)
+
+![Captura 6](https://github.com/user-attachments/assets/fe25f707-2c93-45c0-b1ff-7fd933929426)
