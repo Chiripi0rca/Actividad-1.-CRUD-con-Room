@@ -157,18 +157,6 @@ project/
     │   └── themes.xml
     │
     └── mipmap/                         # Íconos
-![WhatsApp Image 2025-12-13 at 5 19 43 PM](https://github.com/user-attachments/assets/53ffa72d-b3c1-4d77-afdc-5641774f098b)
-![WhatsApp Image 2025-12-13 at 5 19 48 PM](https://github.com/user-attachments/assets/ab74fad5-eb0f-4e13-8026-f08931689af4)
-![WhatsApp Image 2025-12-13 at 5 19 24 PM](https://github.com/user-attachments/assets/f501de29-77d4-49d0-b88a-02c61421eb77)
-![WhatsApp Image 2025-12-13 at 5 19 34 PM](https://github.com/user-attachments/assets/5756ee1f-6914-42ac-bbe9-e9edd604ccf3)
-![WhatsApp Image 2025-12-13 at 5 19 29 PM](https://github.com/user-attachments/assets/f34a9b4b-90f4-48b4-b950-0614d8fb0d30)
-![WhatsApp Image 2025-12-13 at 5 19 24 PM (1)](https://github.com/user-attachments/assets/525870b9-783a-4e8d-b5f4-29a54758e2c7)
-![WhatsApp Image 2025-12-13 at 5 19 29 PM (1)](https://github.com/user-attachments/assets/e6872792-3517-4d1b-8b3b-5dd015d2c3db)
-![WhatsApp Image 2025-12-13 at 5 19 34 PM (1)](https://github.com/user-attachments/assets/f9402226-678a-403d-a6b0-b4fbfbf087ff)
-![1000000227](https://github.com/user-attachments/assets/f0351257-9b07-44e0-a5a2-17981fda02b9)
-![1000000225](https://github.com/user-attachments/assets/d5cbe79a-c6ad-4ca4-a5ad-baf8475de708)
-![1000000224](https://github.com/user-attachments/assets/3ff9891a-3af3-4ca0-9980-f404fe544b5f)
-![1000000226](https://github.com/user-attachments/assets/39bbb48f-4416-4466-a5a7-4c401e5fdc48)
-![1000000221](https://github.com/user-attachments/assets/1a24505a-b8c6-41f3-a2c8-e52bbf172fff)
-![1000000222](https://github.com/user-attachments/assets/786320fd-5da2-4f65-b24d-67b17e216f0c)
+
+![WhatsApp Image 2025-12-13 at 5 19 48 PM](https://github.com/user-attachments/assets/c2985fca-1408-4a05-a8d4-fcb9921a2fbc)
 
