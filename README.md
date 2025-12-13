@@ -1,22 +1,25 @@
 # ✅ Task App (Android)
 
-Aplicación Android para gestionar tareas simples con **auditoría integrada**. Permite **crear, listar, actualizar y eliminar** tareas con una base de datos local (Room) y consultar un **historial completo** de todas las acciones CRUD.
+Aplicación Android para gestionar tareas simples con **auditoría integrada**. Permite **crear, listar, actualizar y eliminar** tareas con una base de datos local (**Room**) y consultar un **historial completo** de todas las acciones CRUD.
 
 ---
 
 ## 📌 Contenido
-- [Descripción](#-descripción)
-- [Instalación y ejecución](#-instalación-y-ejecución)
-- [Base de datos](#-base-de-datos)
-  - [Entidad Task](#-entidad-task)
-  - [Entidad History](#-entidad-history)
-  - [DAOs](#-daos)
-  - [Base de datos Room](#-base-de-datos-room)
-- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Descripción](#descripcion)
+- [Instalación y ejecución](#instalacion-y-ejecucion)
+- [Base de datos](#base-de-datos)
+  - [Entidad Task](#entidad-task)
+  - [Entidad History](#entidad-history)
+  - [DAOs](#daos)
+  - [Base de datos Room](#base-de-datos-room)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Capturas](#capturas)
 
 ---
 
+<a id="descripcion"></a>
 ## 🧾 Descripción
+
 **Task App** implementa una agenda de tareas usando **Android + Java + Room**. Incluye pantallas para:
 
 - **📋 Listar** tareas
@@ -27,6 +30,7 @@ Aplicación Android para gestionar tareas simples con **auditoría integrada**. 
 
 ---
 
+<a id="instalacion-y-ejecucion"></a>
 ## 🚀 Instalación y ejecución
 
 ### Requisitos
@@ -41,6 +45,7 @@ Aplicación Android para gestionar tareas simples con **auditoría integrada**. 
 
 ---
 
+<a id="base-de-datos"></a>
 ## 🗄️ Base de datos
 
 El proyecto utiliza **Room** y maneja dos tablas principales:
@@ -50,6 +55,7 @@ El proyecto utiliza **Room** y maneja dos tablas principales:
 
 ---
 
+<a id="entidad-task"></a>
 ## ✅ Entidad Task
 
 📍 **Ubicación:** `java/com/fic/task/model/Task.java`
@@ -64,6 +70,7 @@ El proyecto utiliza **Room** y maneja dos tablas principales:
 
 ---
 
+<a id="entidad-history"></a>
 ## 🧾 Entidad History
 
 📍 **Ubicación:** `java/com/fic/task/model/History.java`
@@ -77,6 +84,7 @@ El proyecto utiliza **Room** y maneja dos tablas principales:
 
 ---
 
+<a id="daos"></a>
 ## 🧩 DAOs
 
 ### TaskDao
@@ -104,6 +112,7 @@ El proyecto utiliza **Room** y maneja dos tablas principales:
 
 ---
 
+<a id="base-de-datos-room"></a>
 ## 🏛️ Base de datos Room
 
 📍 **Archivo:** `TaskDataBase.java`  
@@ -116,6 +125,7 @@ El proyecto utiliza **Room** y maneja dos tablas principales:
 
 ---
 
+<a id="estructura-del-proyecto"></a>
 ## 🗂️ Estructura del proyecto
 
 ```text
@@ -157,6 +167,10 @@ project/
     │   └── themes.xml
     │
     └── mipmap/                         # Íconos
-
-![WhatsApp Image 2025-12-13 at 5 19 48 PM](https://github.com/user-attachments/assets/c2985fca-1408-4a05-a8d4-fcb9921a2fbc)
-
+<a id="capturas"></a>
+![1000000221](https://github.com/user-attachments/assets/2740d8a2-c4be-4f07-b632-f5db549255f5)
+![1000000222](https://github.com/user-attachments/assets/ccdaf3aa-d434-478c-809b-ebf7b5d56bce)
+![1000000227](https://github.com/user-attachments/assets/9008f303-e6a0-4286-8bc4-92dafc7fe4f3)
+![1000000225](https://github.com/user-attachments/assets/c9a0075a-460b-4187-8ff8-30be0a7b0442)
+![1000000224](https://github.com/user-attachments/assets/13d76eaa-3bab-4860-9f0e-3fcd69b6f7b6)
+![1000000226](https://github.com/user-attachments/assets/fe25f707-2c93-45c0-b1ff-7fd933929426)
