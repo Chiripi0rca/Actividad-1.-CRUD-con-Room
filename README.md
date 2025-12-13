@@ -1,77 +1,134 @@
-# Task App
+✅ Task App (Android)
 
-Aplicación Android para gestionar tareas simples con sistema de auditoría integrado. Permite crear, listar, actualizar y eliminar tareas usando una base de datos local, además de consultar un historial completo de todas las acciones realizadas.
+Aplicación Android para gestionar tareas simples con un sistema de auditoría/historial integrado. Permite crear, listar, actualizar y eliminar tareas usando una base de datos local con Room, además de consultar un historial completo de todas las acciones CRUD realizadas.
 
-## Descripción breve
-Esta aplicación implementa una agenda de tareas usando Android, Java y Room como sistema de persistencia. Incluye pantallas para visualizar la lista de tareas, agregar nuevas, editar las existentes y consultar un historial detallado de todas las operaciones CRUD realizadas.
+📌 Descripción
 
-## Instrucciones de instalación y ejecución
+Task App implementa una agenda de tareas en Android usando Java y Room como sistema de persistencia. Incluye pantallas para:
 
-### Requisitos
-- Android Studio .
-- Dispositivo Android o emulador.
+Ver la lista de tareas
 
-### Pasos
-1. Clonar o descargar este repositorio.
-2. Abrir la carpeta del proyecto en Android Studio.
-3. Esperar a que Gradle sincronice automáticamente.
-4. Ejecutar la app con el botón *Run* seleccionando un emulador o dispositivo físico.
+Agregar nuevas tareas
 
-## Estructura de la base de datos
+Editar tareas existentes
 
-El proyecto utiliza **Rooom**, La tabla principal es `Task`.
+Eliminar tareas
 
-Entidad Task
+Consultar un historial detallado de operaciones (insert, update, delete)
+
+🧰 Tecnologías usadas
+
+Android Studio
+
+Java
+
+Room (SQLite)
+
+RecyclerView (adaptadores para tareas e historial)
+
+🚀 Instalación y ejecución
+Requisitos
+
+Android Studio (versión reciente recomendada)
+
+Dispositivo Android o emulador
+
+Pasos
+
+Clona o descarga este repositorio:
+
+git clone <URL_DEL_REPO>
+
+
+Abre la carpeta del proyecto en Android Studio
+
+Espera a que Gradle sincronice
+
+Ejecuta la app con el botón Run, seleccionando un emulador o dispositivo físico
+
+🗄️ Base de datos (Room)
+
+La aplicación usa Room con dos entidades principales: Task y History.
+
+📌 Entidad: Task
+
 Ubicación: java/com/fic/task/model/Task.java
+
 Campos:
 
 id (int, clave primaria autogenerada)
+
 task_title (String, título de la tarea)
+
 task_description (String, descripción detallada)
+
 created_at (String, fecha de creación en formato yyyy-MM-dd HH:mm)
+
 is_completed (boolean, estado de completitud)
 
-Entidad History
+📌 Entidad: History
+
 Ubicación: java/com/fic/task/model/History.java
+
 Campos:
 
 history_id (int, clave primaria autogenerada)
+
 action (String, tipo de acción: "insert_task", "update_task", "delete_task")
-created_at (String, fecha y hora de la acción en formato yyyy-MM-dd HH:mm:ss)
-details (String, información sobre el registro afectado)
 
-DAOs
-TaskDao
+created_at (String, fecha y hora en formato yyyy-MM-dd HH:mm:ss)
+
+details (String, información del registro afectado)
+
+🧩 DAOs
+✅ TaskDao
+
 Archivo: TaskDao.java
+
 Métodos:
 
-insert(Task task) - Insertar nueva tarea
-update(Task task) - Actualizar tarea existente
-delete(Task task) - Eliminar tarea
-getAllTask() - Obtener todas las tareas
-getTaskById(int id) - Obtener tarea por ID
+insert(Task task) → Insertar nueva tarea
 
-HistoryDao
+update(Task task) → Actualizar una tarea existente
+
+delete(Task task) → Eliminar tarea
+
+getAllTask() → Obtener todas las tareas
+
+getTaskById(int id) → Obtener tarea por ID
+
+✅ HistoryDao
+
 Archivo: HistoryDao.java
+
 Métodos:
 
-insert(History history) - Registrar nueva acción en el historial
-getAllHistory() - Obtener todo el historial ordenado por fecha
-getHistoryByAction(String action) - Filtrar por tipo de acción
-getHistoryByDate(String date) - Filtrar por fecha específica
-getHistoryByActionAndDate(String action, String date) - Filtrar por acción y fecha
-deleteAllHistory() - Limpiar todo el historial
+insert(History history) → Registrar nueva acción en historial
 
-Base de datos
+getAllHistory() → Obtener todo el historial ordenado por fecha
+
+getHistoryByAction(String action) → Filtrar por tipo de acción
+
+getHistoryByDate(String date) → Filtrar por fecha específica
+
+getHistoryByActionAndDate(String action, String date) → Filtrar por acción y fecha
+
+deleteAllHistory() → Limpiar todo el historial
+
+🏛️ Base de datos
+
 Archivo: TaskDataBase.java
 Versión: 2
+
 Define:
 
-Base de datos Room con las entidades Task y History
-Acceso a ambos DAOs (TaskDao y HistoryDao)
-Configuración singleton para instancia única
+Base de datos Room con entidades Task y History
 
-Estructura del proyecto
+Acceso a TaskDao y HistoryDao
+
+Configuración Singleton para una instancia única
+
+🗂️ Estructura del proyecto
 project/
 │── AndroidManifest.xml
 │
@@ -81,35 +138,35 @@ project/
 │   │   └── HistoryController.java      # Gestión del historial
 │   │
 │   ├── model/
-│   │   ├── Task.java                   # Entidad de tarea
-│   │   ├── TaskDao.java                # DAO de tareas
-│   │   ├── History.java                # Entidad de historial
-│   │   ├── HistoryDao.java             # DAO de historial
+│   │   ├── Task.java                   # Entidad Task
+│   │   ├── TaskDao.java                # DAO Task
+│   │   ├── History.java                # Entidad History
+│   │   ├── HistoryDao.java             # DAO History
 │   │   └── TaskDataBase.java           # Configuración de Room
 │   │
 │   └── view/
-│       ├── TaskActivity.java           # Pantalla principal de tareas
-│       ├── AddTaskActivity.java        # Pantalla para agregar tareas
-│       ├── UpdateTaskActivity.java     # Pantalla para editar tareas
-│       ├── HistoryActivity.java        # Pantalla de historial
-│       ├── TaskAdapter.java            # Adaptador para lista de tareas
-│       └── HistoryAdapter.java         # Adaptador para lista de historial
+│       ├── TaskActivity.java           # Pantalla principal
+│       ├── AddTaskActivity.java        # Agregar tarea
+│       ├── UpdateTaskActivity.java     # Editar tarea
+│       ├── HistoryActivity.java        # Historial
+│       ├── TaskAdapter.java            # Adaptador de tareas
+│       └── HistoryAdapter.java         # Adaptador de historial
 │
 └── res/
     ├── layout/
-    │   ├── activity_task.xml           # Layout principal
-    │   ├── activity_add_task.xml       # Layout agregar tarea
-    │   ├── activity_upgrade_task.xml   # Layout actualizar tarea
-    │   ├── activity_history.xml        # Layout historial
-    │   ├── item_task.xml               # Item de tarea
-    │   └── item_history.xml            # Item de historial
+    │   ├── activity_task.xml
+    │   ├── activity_add_task.xml
+    │   ├── activity_upgrade_task.xml   # (Ojo: parece que querías "update")
+    │   ├── activity_history.xml
+    │   ├── item_task.xml
+    │   └── item_history.xml
     │
     ├── values/
-    │   ├── strings.xml                 # Strings de la aplicación
-    │   ├── colors.xml                  # Colores
-    │   └── themes.xml                  # Temas
+    │   ├── strings.xml
+    │   ├── colors.xml
+    │   └── themes.xml
     │
-    └── mipmap/                         # Íconos de la aplicación
+    └── mipmap/
 
 ## Capturas de pantalla
 
