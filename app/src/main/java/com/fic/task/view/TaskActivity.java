@@ -2,6 +2,7 @@ package com.fic.task.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -55,6 +56,8 @@ public class TaskActivity extends AppCompatActivity {
         FabAddTask.setOnClickListener(view ->{
             showAddTaskActivity();
         });
+        Button btnViewHistory = findViewById(R.id.btnViewHistory);
+        btnViewHistory.setOnClickListener(v -> showHistoryActivity());
 
     }
 
@@ -65,6 +68,10 @@ public class TaskActivity extends AppCompatActivity {
 
     private void showAddTaskActivity(){
         Intent intent = new Intent(TaskActivity.this, AddTaskActivity.class);
+        startActivity(intent);
+    }
+    private void showHistoryActivity(){
+        Intent intent = new Intent(TaskActivity.this, HistoryActivity.class);
         startActivity(intent);
     }
     @Override

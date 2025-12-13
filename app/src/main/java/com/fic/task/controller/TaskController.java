@@ -3,6 +3,7 @@ package com.fic.task.controller;
 import android.content.Context;
 import android.util.Log;
 
+import com.fic.task.model.HistoryDao;
 import com.fic.task.model.Task;
 import com.fic.task.model.TaskDao;
 import com.fic.task.model.TaskDataBase;
@@ -15,10 +16,12 @@ import java.util.Locale;
 public class TaskController {
 
     private final TaskDao taskDao;
+    private final HistoryController historyController;
 
     public TaskController(Context context){
         TaskDataBase taskDataBase =  TaskDataBase.getInstance(context);
         taskDao = taskDataBase.taskDao();
+        historyController = new HistoryController(context);
     }
 
     //create a task
@@ -37,6 +40,10 @@ public class TaskController {
              task.createdAt = Fecha.format(new Date());
              task.isCompleted = isCompleted;
              taskDao.insert(task);
+
+             //insertar la tarea en el historial
+             historyController.insetarAccion("insert_task", "Tarea Creada");
+
              Log.i("TASK_SAVE", "La tarea se ha creado correctamente");
              return true;
          } catch (Exception e){
@@ -57,13 +64,19 @@ public class TaskController {
         task.setTaskDescription(newDescription);
         task.setCompleated(completed);
         taskDao.update(task);
+        //registrar el update en el historial
+        historyController.insetarAccion("update_task", "Tarea actualizada");
         return true;
 
     }
 
     //delete a task
     public  void deleteTask(Task task){
+        String taskTitle = task.getTitle();
         taskDao.delete(task);
+
+        //registrar la eliminacion de la tarea en el historial
+        historyController.insetarAccion("delete_task", "Tarea eliminada" + taskTitle);
     }
     //get id
     public Task getTaskById(int id) {

@@ -25,6 +25,8 @@
             android:exported="false"/>
         <activity android:name=".view.UpdateTaskActivity"
             android:exported="false"/>
+        <activity android:name=".view.HistoryActivity"
+            android:exported="false"/>
 
     </application>
 
