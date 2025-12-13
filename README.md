@@ -185,3 +185,12 @@ project/
 ![Captura 5](https://github.com/user-attachments/assets/13d76eaa-3bab-4860-9f0e-3fcd69b6f7b6)
 
 ![Captura 6](https://github.com/user-attachments/assets/fe25f707-2c93-45c0-b1ff-7fd933929426)
+
+![Captura 7](https://github.com/user-attachments/assets/3f842b20-d840-44fa-8343-875248c37084)
+![Captura 8](https://github.com/user-attachments/assets/30d642f8-bb0c-4ccf-a62b-546ef82434ae)
+![Captura 9](https://github.com/user-attachments/assets/0b101d8d-293a-464b-8071-ef0382e93ab8)
+![Captura 10](https://github.com/user-attachments/assets/0f221298-30fc-4047-a1b0-e2fd76fb921e)
+![Captura 11](https://github.com/user-attachments/assets/6e7f9ee7-342b-4287-b5c2-326643aa9fa7)
+![Captura 12](https://github.com/user-attachments/assets/3eb5e7a0-754a-46ed-b1e6-2befc72601df)
+![Captura 13](https://github.com/user-attachments/assets/fc451913-b87d-4432-9245-10a24dc01a5c)
+![Captura 14](https://github.com/user-attachments/assets/2fcba46e-0e79-44a0-ad30-8c0b7a52e620)
